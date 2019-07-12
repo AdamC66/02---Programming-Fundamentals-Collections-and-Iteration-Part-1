@@ -219,10 +219,11 @@ print(total_of_nums)
 
 
 # Create a new list which has three of each number up to 50.
-new_nums = []
-for i in range(1,51):
-    for x in range(1,4):
-        new_nums.append(i)
+
+# for i in range(1,50+1):
+#     for x in range(1,4):
+#         new_nums.append(i)
+new_nums = [x for x in range(1,50+1) for y in range(3)]
 print(new_nums)
 
 # Ie. [1, 1, 1, 2, 2, 2, 3, 3, 3, ... , 50, 50, 50] and so on, up to 50.
